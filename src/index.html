@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <article class="form">
+        <section class="form__section row">
+            <div class="form__image">
+                <img src="./images/main-img.svg" alt="Illustration for registration form">
+            </div>
+            <div class="form__content">
+                <div class="form__container">
+                    <div class="form__text">
+                        <h1 class="form__title">
+                            Get more things done with us
+                        </h1>
+                        <p class="form__description">
+                            Search Sourcing the world's brightest professionals for your business.
+                        </p>
+                    </div>
+                    <div class="form__tabs">
+                        <nav>
+                            <div class="nav nav-tabs form__nav" id="nav-tab" role="tablist">
+                                <button class="form__tab nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#logIn" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Login</button>
+                                <button class="form__tab nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#signUp" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Sign
+                                    up</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="logIn" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="form__login">
+                                    <form>
+                                        <div class=" form__inputwrap">
+                                            <input type="email" class="form-control form__input"
+                                                placeholder="Email address" required id="inputEmail"
+                                                aria-describedby="emailHelp">
+                                            <div class="invalid-feedback">
+                                                Пожалуйста, выберите имя пользователя.
+                                            </div>
+
+                                        </div>
+                                        <div class=" form__inputwrap">
+                                            <input type="password" class="form-control form__input"
+                                                placeholder="Password" id="inputPassword" required>
+                                            <span class="form__passontrol disabled" id="showHide">Show</span>
+                                        </div>
+
+                                        <button type="submit" class="btn form__btn">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="signUp" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="form__login form__signup">
+                                    <form>
+                                        <div class=" form__inputwrap">
+                                            <input type="email" class="form-control form__input"
+                                                placeholder="Email address" id="signupEmail"
+                                                aria-describedby="emailHelp">
+
+                                        </div>
+                                        <div class=" form__inputwrap">
+                                            <input type="tel" class="form-control form__input" placeholder="Phone"
+                                                id="signupTel" aria-describedby="tellHelp">
+
+                                        </div>
+                                        <div class=" form__inputwrap">
+                                            <input type="password" class="form-control form__input"
+                                                placeholder="Password" id="signupPassword">
+                                            <span class="form__passontrol disabled" id="signUpshowHide">Show</span>
+                                        </div>
+
+                                        <button type="submit" class="btn form__btn">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="other__enter">
+                        <p class="other__title">Or login with</p>
+                        <ul class="other__list">
+                            <li><a href="google">Google</a></li>
+                            <li><a href="facebook">Facebook</a></li>
+                            <li><a href="twitter">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
